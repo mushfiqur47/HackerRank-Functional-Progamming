@@ -1,3 +1,9 @@
+%https://www.hackerrank.com/challenges/fp-sum-of-odd-elements/problem
+
+
+
+
+
 -module(solution).
 -export([main/0]).
 

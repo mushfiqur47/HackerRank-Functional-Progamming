@@ -1,4 +1,4 @@
-%List Length
+
 
 -module(solution).
 -export([main/0]).

@@ -1,4 +1,4 @@
-List 
+
 
 defmodule Arr do
   def count(arr) do

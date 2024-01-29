@@ -1,1 +1,6 @@
-
+(def s1 (read-line))
+(def s2 (read-line))
+(def pre-len (count (take-while identity (map = s1 s2))))
+(println pre-len (subs s1 0 pre-len))
+(println (- (count s1) pre-len) (subs s1 pre-len))
+(println (- (count s2) pre-len) (subs s2 pre-len))

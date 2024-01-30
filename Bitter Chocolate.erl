@@ -85,18 +85,17 @@ seq(R) ->
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 % Output
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 output_data(Ds) -> 
     lists:map(
         fun(D) -> io:format("~s\n", [if D -> "WIN"; true -> "LOSE" end]) end, 
         Ds).
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 % Input
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 read_data() ->
     Binary = read(),

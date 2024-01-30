@@ -1,9 +1,9 @@
 -module(solution).
 -export([main/0, prof/0]).
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 % Main
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 main() ->
     Data = read_data(),
@@ -11,9 +11,9 @@ main() ->
     output_data(Res),
     ok.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 % Profiling
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 prof() ->
     eprof:start(),
@@ -34,9 +34,9 @@ main2() ->
     io:format("OUTPUT: total time taken ~p seconds~n", [timer:now_diff(os:timestamp(), StartOutput)/1000000]),
     ok.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 % Calculate
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 calculate(Ts) ->
     ets:new(dict, [named_table]),
